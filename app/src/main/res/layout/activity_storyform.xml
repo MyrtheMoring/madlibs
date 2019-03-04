@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textlist"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="Choose yor story"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:id="@+id/stories"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/simple"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="storyButton"
+            android:text="Simple" />
+
+        <Button
+            android:id="@+id/tarzan"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="storyButton"
+            android:text="Tarzan" />
+
+        <Button
+            android:id="@+id/university"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="storyButton"
+            android:text="University" />
+
+        <Button
+            android:id="@+id/clothes"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="storyButton"
+            android:text="Clothes" />
+
+        <Button
+            android:id="@+id/dance"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/holo_blue_bright"
+            android:onClick="storyButton"
+            android:text="Dance" />
+    </LinearLayout>
+
+</LinearLayout>
