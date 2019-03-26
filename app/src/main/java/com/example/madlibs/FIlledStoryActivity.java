@@ -7,8 +7,10 @@ import android.text.Html;
 import android.view.View;
 import android.widget.TextView;
 
-public class FIlledStory extends AppCompatActivity {
+public class FIlledStoryActivity extends AppCompatActivity {
 
+    /** The onCreate function gets the story from the FillForm activity and set the text in the
+     * filledStory activity layout. */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,8 +23,9 @@ public class FIlledStory extends AppCompatActivity {
         storytext.setText(Html.fromHtml(story,Html.FROM_HTML_MODE_LEGACY));
     }
 
+    /** The onClick function to go back to the StoryForm to fill in a new story. */
     public void backtoStory(View v){
-        Intent intent = new Intent(FIlledStory.this, StoryForm.class);
+        Intent intent = new Intent(FIlledStoryActivity.this, StoryFormActivity.class);
         startActivity(intent);
     }
 }

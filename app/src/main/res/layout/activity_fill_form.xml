@@ -11,12 +11,16 @@
         android:layout_height="40dp"
         android:layout_weight="1"
         android:gravity="center"
-        android:text="Fill in the story" />
+        android:text="Fill in the story"
+        android:textColor="#5E352A"
+        android:textSize="28sp" />
 
     <TextView
         android:id="@+id/numberwords"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_weight="0"
         android:gravity="center" />
 
@@ -24,12 +28,16 @@
         android:id="@+id/placeholder"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:text="TextView" />
 
     <LinearLayout
         android:id="@+id/inputform"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:layout_marginBottom="50dp"
         android:layout_weight="1"
         android:orientation="horizontal">
@@ -38,7 +46,7 @@
             android:id="@+id/inputword"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
-            android:layout_margin="10dp"></EditText>
+            android:layout_margin="5dp"></EditText>
 
         <Button
             android:id="@+id/submitword"

@@ -23,13 +23,15 @@ import java.io.*;
 import java.util.*;
 
 public class Story implements Serializable {
-    private String text;                 // text of the story
-    private List<String> placeholders;   // list of placeholders to fill in
-    private int filledIn;                // number of placeholders that have been filled in
-    private boolean htmlMode;            // set to true to surround placeholders with <b></b> tags
+
+    /** The text of the story, the list of placeholder to fill in, the number of placeholder that
+     * have been filled in en the boolean to surround the placeholder with bold tags. */
+    private String text;
+    private List<String> placeholders;
+    private int filledIn;
+    private boolean htmlMode;
 
     {
-        // instance initializer; runs before any constructor
         text = "";
         placeholders = new ArrayList<String>();
         filledIn = 0;

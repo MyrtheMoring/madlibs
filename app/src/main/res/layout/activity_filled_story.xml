@@ -12,6 +12,8 @@
         android:layout_marginTop="50dp"
         android:gravity="center"
         android:text="Your Mad Lib Story"
+        android:textColor="#D77A61"
+        android:textSize="28sp"
         android:textStyle="bold" />
 
     <TextView
@@ -21,7 +23,8 @@
         android:layout_gravity="start"
         android:layout_margin="50dp"
         android:layout_weight="1"
-        android:text="TextView" />
+        android:padding="10dp"
+        android:text="Text" />
 
     <Button
         android:id="@+id/button"
@@ -31,5 +34,7 @@
         android:layout_marginBottom="50dp"
         android:gravity="center"
         android:onClick="backtoStory"
-        android:text="Choose again" />
+        android:shadowColor="#D77A61"
+        android:text="Choose again"
+        android:textColor="#5E352A" />
 </LinearLayout>

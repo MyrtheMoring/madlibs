@@ -4,19 +4,8 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.TextView;
-
-import static java.lang.System.out;
-
-import java.io.InputStream;
-import java.io.Serializable;
-
 
 public class MainActivity extends AppCompatActivity {
-
-    Story story;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,8 +13,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    /** The button onClick that starts the new activity in the StoryForm activity. */
     public void getStarted(View v) {
-        Intent intent = new Intent(MainActivity.this, StoryForm.class);
+        Intent intent = new Intent(MainActivity.this, StoryFormActivity.class);
         startActivity(intent);
     }
 

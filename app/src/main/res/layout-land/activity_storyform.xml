@@ -7,33 +7,34 @@
     <TextView
         android:id="@+id/textlist"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:layout_gravity="center"
-        android:layout_margin="20dp"
+        android:layout_weight="1"
         android:gravity="center"
         android:text="Choose yor story"
+        android:textColor="#D77A61"
         android:textSize="30sp" />
 
     <LinearLayout
         android:id="@+id/stories"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_marginBottom="10dp"
+        android:layout_height="250dp"
         android:orientation="vertical">
 
         <Button
             android:id="@+id/simple"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@android:color/holo_blue_bright"
+            android:background="#223843"
             android:onClick="storyButton"
-            android:text="Simple" />
+            android:text="Simple"
+            android:textColor="#848587" />
 
         <Button
             android:id="@+id/tarzan"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@android:color/holo_blue_bright"
+            android:background="#EFF1F3"
             android:onClick="storyButton"
             android:text="Tarzan" />
 
@@ -41,15 +42,16 @@
             android:id="@+id/university"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@android:color/holo_blue_bright"
+            android:background="#848587"
             android:onClick="storyButton"
-            android:text="University" />
+            android:text="University"
+            android:textColor="@android:color/background_dark" />
 
         <Button
             android:id="@+id/clothes"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@android:color/holo_blue_bright"
+            android:background="#D8B4A0"
             android:onClick="storyButton"
             android:text="Clothes" />
 
@@ -57,7 +59,7 @@
             android:id="@+id/dance"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:background="@android:color/holo_blue_bright"
+            android:background="#D77A61"
             android:onClick="storyButton"
             android:text="Dance" />
     </LinearLayout>

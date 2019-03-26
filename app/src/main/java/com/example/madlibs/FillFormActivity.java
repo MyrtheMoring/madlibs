@@ -7,14 +7,14 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import java.io.InputStream;
 
-public class FillForm extends AppCompatActivity {
+public class FillFormActivity extends AppCompatActivity {
 
     Story story;
     String placeholder;
     TextView plholder;
 
+    /** The onCreate checks if there a story in the savedInstanceState in order to turn the screen.*/
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +44,8 @@ public class FillForm extends AppCompatActivity {
         outState.putSerializable("story", story);
     }
 
+    /** The function that checks if the story is filled in and directs based on this condition to
+     * the next activity or not. */
     public void filledStory(View v){
 
         EditText input = findViewById(R.id.inputword);
@@ -64,7 +66,7 @@ public class FillForm extends AppCompatActivity {
 
         if (story.isFilledIn()){
             String storystring = story.toString();
-            Intent intent = new Intent(this, FIlledStory.class);
+            Intent intent = new Intent(this, FIlledStoryActivity.class);
             intent.putExtra("storystring", storystring);
             startActivity(intent);
         }

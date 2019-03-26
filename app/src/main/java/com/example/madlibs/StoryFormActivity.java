@@ -5,22 +5,19 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 
 import java.io.InputStream;
-import java.io.Serializable;
 
-public class StoryForm extends AppCompatActivity {
+public class StoryFormActivity extends AppCompatActivity {
 
-    final static String TAG = "story";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_storyform);
-
-
     }
 
+    /** Button onClick function storyButton that gets the story type from the inputstream and
+     * starts a new activity with the story in the given intent. */
     public void storyButton(View v){
         InputStream storystream = getResources().openRawResource(R.raw.madlib0_simple);
         switch (v.getId()) {
@@ -38,10 +35,8 @@ public class StoryForm extends AppCompatActivity {
                 break;
         }
 
-
         Story story = new Story(storystream);
-        Log.d(TAG, "storyButton: " + story.toString());
-        Intent intent = new Intent(StoryForm.this, FillForm.class);
+        Intent intent = new Intent(StoryFormActivity.this, FillFormActivity.class);
         intent.putExtra("Story", story);
         startActivity(intent);
     }
