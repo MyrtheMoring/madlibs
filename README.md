@@ -5,19 +5,17 @@ Datum: 26/03/2019
 
 The *Madlib* is an app that you to create your own customized stories. 
 
-1. Empty:
-![alt text](https://github.com/MyrtheMoring/TicTacToe/blob/master/1.png "Empty board")
+1. Start:
+![alt text](https://github.com/MyrtheMoring/madlibs/blob/master/start.png "Start")
 
-1.1 Empty landscape:
-![alt text](https://github.com/MyrtheMoring/TicTacToe/blob/master/land1.png "Empty board landscape")
+2. Choice for the story type:
+![alt text](https://github.com/MyrtheMoring/madlibs/blob/master/storychoice.png "Story type")
 
-2. PLayor one wins:
-![alt text](https://github.com/MyrtheMoring/TicTacToe/blob/master/2.png "Playor one wins")
+3. Fill in the missing fields in the story:
+![alt text](https://github.com/MyrtheMoring/madlibs/blob/master/fillin.png "Fill in story")
 
-2.1 Winner board landscape:
-![alt text](https://github.com/MyrtheMoring/TicTacToe/blob/master/land2.png "Winner board landscape")
+4. Read your (funny) story:
+![alt text](https://github.com/MyrtheMoring/madlibs/blob/master/story.png "Read story")
 
-3. A draw:
-![alt text](https://github.com/MyrtheMoring/TicTacToe/blob/master/3.png "Playor one wins")
 
 
